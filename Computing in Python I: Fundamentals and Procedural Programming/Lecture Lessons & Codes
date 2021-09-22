@@ -1,1 +1,91 @@
 Chapter 1 -> read textbook!
+Chapter 2.1 -> read textbook
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Running IDLE
+
+As part of installing Python, you just installed something called IDLE: Integrated DeveLopment Environment. So, search for IDLE on your computer and run it. In Windows, that will look something like this:
+
+
+IDLE comes up when searching for IDLE, or you can find it in the Python 3 folder of your Start Menu.
+
+If you're on a Mac, it will look similar, but use Mac's search tool.
+
+
+Using IDLE: Immediate Mode
+
+Initially when running IDLE, you'll see something like this:
+
+
+The default IDLE window.
+
+This version of Python works like a complex calculator. Any lines of code you learn in this course can be typed directly into this prompt and executed one by one. For example:
+
+
+Some simple code in the IDLE window.
+
+Here, we're using Python exactly like a calculator for some simple variable-based math. This can be a powerful tool just for trying out little things. If you're wondering, "I wonder why Python does if I true to divide by zero?", you could try it:
+
+
+The Python output from trying to divide 1 by 0.
+
+And now you know! Let's try something else in this window real quick.
+
+
+Using IDLE: Scripting Mode
+
+While that's useful for little tests, it's not so useful for writing longer chunks of code and testing them. For that, we want to use IDLE's editor window.
+
+In IDLE, click File, then New File (or hit Ctrl+N on PC, or Cmd+N on Mac). You'll get a new window that looks like this:
+
+
+An empty IDLE editor window.
+
+This is an empty code file. Now, type in print("Hello world") into this file. While you type, you'll see some helper text come up: this is meant to tell you the options available for the code you're writing, but for now, you're probably best off ignoring it.
+
+
+Writing code in the editor with a tooltip visible.
+
+When you're done, go to the Run menu and select Run Module:
+
+
+The Run menu.
+
+You'll be prompted to save the file. You can save it anywhere and name it anything. Afterward, look back at your main IDLE window. You'll see this:
+
+
+The results of running Hello World.
+
+The program runs, and the output is shown.
+
+This is a simple demonstration with powerful implications: using this, you can write Python scripts that run on your own computer, work on your own files, and can be shared just like documents or images. Anything you write in this course can be copied into this kind of window and saved. You're also welcome to use IDLE for testing your code more efficiently: if you're rapidly revising and retesting some code, it can definitely be more efficient to use IDLE than wait for Vocareum in the browser.
+
+
+IDLE and input()
+
+Another big benefit of running Python and IDLE locally is that you can make use of the input() function. The input() function lets you write scripts that require the person running them to input data directly.
+
+For example, copy this code into the editor window:
+user_input = input("Enter some text: ")
+print("You entered:", user_input)
+
+It should look like this:
+
+
+A test of using input().
+
+If you run this using Run > Run Module, you'll see this:
+
+
+Running the code above.
+
+The blinking cursor indicates that the script is waiting on you to enter some value. Once you enter something, the rest of the script will run:
+
+
+The result of entering some user input.
+
+What you entered into the prompt is then used by the program. Because our Vocareum exercises require your entire script to run at once, it can't wait on user input like this, and thus we generally can't use the input() function. In IDLE on your own computer, though, you can.
+
+Let's try one last exercise to test this out.
+------------------------------------------------------------------------------------------------------------------------------------------
