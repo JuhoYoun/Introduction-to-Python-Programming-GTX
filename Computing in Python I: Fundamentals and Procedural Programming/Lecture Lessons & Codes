@@ -89,7 +89,10 @@ What you entered into the prompt is then used by the program. Because our Vocare
 
 Let's try one last exercise to test this out.
 ------------------------------------------------------------------------------------------------------------------------------------------
+*By default, print() adds a line break to the end of the printed text.
+*Python has no special way of creating multi-line comments.
 
+------------------------------------------------------------------------------------------------------------------------------------------
 Scripting Languages vs Compiled Languages (강의에는 있었나? 걍 궁금해서 검색함)
 Dynamic Language vs Static Languages (그냥 궁금함)
 Interpreted vs Compiled (차이?)
