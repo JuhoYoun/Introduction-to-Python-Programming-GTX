@@ -129,7 +129,24 @@ That makes it even more apparent that the value is going into the variable.
 
 * Null: The “value” a variable has when it doesn’t actually have a value.
 * In python, use None to assign a Null value to a variable
+* sum = print(5 + 3) -> print(), however, is a function, and it doesn't result in any output, so after this line of code runs, sum will have a value of None.
 * We use the word "assign" synonymously with "give". To assign a value to a variable is to give a value to a variable.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+In other languages, called strongly-typed languages, assigning a type to a variable is actually a separate step from assigning a value to the variable. In Java, for example, whenever creating a variable, we give it a type, with a line like:
+
+int x = 5;
+
+Notice the line is similar to what we have in Python, except it starts with the word 'int'. This tells the computer that x will be an integer. If we then try to assign a different type to x, the code will crash. So, while variables in Python can change types based on what value is assigned to them, variables in Java have to be given a type explicitly.
+
+Java also ends every line with a semi-colon, which is a more trivial difference.
+
+----------------------------------------------------------------------------------------------------------------------------------
+Most other languages have additional primitive data types. For example, most languages have a char data type that represents a single character, but in Python, this is instead simply represented by strings with only one character.
+
+------------------------------------------------------------------------------------------------------------------------------------
+Note that if you learn a language like C or Java, the term ‘primitive’ for data types will take on a stricter meaning. In the technical sense, Python does not have ‘primitive’ data types in the way these other languages do, but the data types we describe here are often used in the same way as primitives in other languages.
+
+------------------------------------------------------------------------------------------------------------------------------------
 
