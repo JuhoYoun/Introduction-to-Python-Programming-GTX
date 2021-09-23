@@ -150,3 +150,40 @@ Note that if you learn a language like C or Java, the term ‘primitive’ for d
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
+So far, we've focused on Python's "primitive" types: booleans (True or False), integers (e.g. 7), floats (e.g. -5.75), and strings (e.g. "Hello!"). Almost everything that you work with can be broken down into these four types. A calendar date, for example, is three integers: one for year, one for month, and one for day.
+
+There is, however, a fifth basic type in Python, but it's weird. The type is NoneType, and it only ever has one value: None.
+
+What is None?
+
+None is Python's implementation of the programming concept of null. This is how Python represents that a variable has no value. This is slightly different from a variable simply not existing: the variable name exists, it just doesn't point to any value. Because there is no value, it also doesn't fit into any of the above types: nothingness isn't a boolean, an integer, a float, or a string. It's just... nothing. So, Python has a special type, called NoneType, which only ever can have one value, None.
+
+
+Where Does None Come From?
+
+I mentioned above that None comes when a variable name exists, but it has no value. You might wonder: how can that happen? After all, in Python, the way we create a variable is to assign it a value:
+a = 0
+
+We create the variable a specifically by assigning it a value. How can we create a variable with no value?
+
+There are two ways. First, the trivial way, we could just do that intentionally:
+b = None
+
+None is just like True, 7, -5.75, or "Hello" -- we can just assign variables to it, and then there value will be None. Chances are, though, you're not going to do that by accident.
+
+The way it will happen more commonly is that you'll set it equal to some operation that doesn't result in anything. Let's try this out.
+
+d = print(c)
+
+That does two things: it prints c, and it sets d to the result of printing c. So, we see "Helloworld" printed because it printed c.
+
+What about d though? You might be tempted to think that d should now have the value "Helloworld", too. Isn't "Helloworld" the result of print(c)? Not exactly: the result of print(c) was "Helloworld" being printed to the console. It did something rather than just resolving to a value. So, there was no actual value for d to be assigned to. As a result, its value is None.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Type Conversion
+
+* str(variable): Takes as input some variable and returns a string representation of the variable’s value. Every data type can be converted to some kind of string.
+* When put some value in print() function, print() always convert it to str value (implicit conversion)
+* print("abc" + 1) -> 이 경우는 type error 가 나오고 print()는 1을 str 으로 변환하지 않는다
+* print("abc", 1) -> abc 1 출력 -> 콤마로 나눠진 값들을 따로 type convrsion 한다 그리고 출력시 값들 사이에 스페이스도 자동으로 추가된다
