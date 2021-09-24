@@ -191,3 +191,17 @@ Type Conversion
 * bool(variable): Takes as input some variable (usually a string) and attempts to convert it to a boolean, returning the boolean value if successful or raising a ValueError if unsuccessful. Generally, this function returns False if variable is 0 or an empty string, True if variable is anything else.
 * float(variable): Takes as input some variable (usually a string) and attempts to convert it to a float, returning the float if successful or raising a ValueError if unsuccessful. This function will work if variable is a string made up only of digits and, optionally, a negative sign and a decimal point.
 
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Reserved Keywords
+
+Here are the reserved words and where they'll be covered in our material:
+
+    Importing Libraries. import, from. Not covered explicitly, but you'll see these in a few places throughout our material, especially when we're dealing with dates, turtles, or random numbers.
+    Logical Operators. and, is, not, or, False, True, None. Covered in Chapter 2.3.
+    Control Structures. as, break, continue, if, elif, else, for, in, while, pass, with. Covered throughout Unit 3. if, elif, and else are covered in 3.2; for, while, pass, continue, and break are covered in 3.3. as and with are not covered explicitly. in comes up in Chapters 2.3, 3.2, 3.3, and other places.
+    Functions. def, return. Covered in Chapter 3.4.
+    Object-Oriented Programming Syntax. class. Covered in Chapter 5.1.
+    Error Handling. except, finally, raise, try. Covered in Chapter 3.5. else also comes up here.
+
+
