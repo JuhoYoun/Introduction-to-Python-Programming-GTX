@@ -249,3 +249,13 @@ Boolean Operators: Operators like “and” and “or” that act on pairs of bo
 it's True that "Grapes"
 #comes before "apples" alphabetically: Python puts all
 #upper-case letters before all lower-case letters.
+-----------------------------------------------------------------------------------------------------------------------
+Order of Logical Operators
+
+You might be familiar with order of operations in math: in what order are operators evaluated if parentheses aren't there to guide the evaluation? How do we know that the formula 5 + 3 * 2 is 11 instead of 16? The same thing exists for logical operators. If they're all in the same expression:
+
+    not is evaluated first.
+    and is evaluated second.
+    or is evaluated third.
+
+
