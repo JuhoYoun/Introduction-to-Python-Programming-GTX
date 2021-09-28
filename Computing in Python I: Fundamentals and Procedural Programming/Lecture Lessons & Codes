@@ -204,4 +204,11 @@ Here are the reserved words and where they'll be covered in our material:
     Object-Oriented Programming Syntax. class. Covered in Chapter 5.1.
     Error Handling. except, finally, raise, try. Covered in Chapter 3.5. else also comes up here.
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+For example, in Python, we can do this:
+my_var = 5
+my_var = "Hello, world!"
 
+But in Java, we cannot do this:
+int my_var = 5;
+my_var = "Hello, world!";
