@@ -258,4 +258,65 @@ You might be familiar with order of operations in math: in what order are operat
     and is evaluated second.
     or is evaluated third.
 
+----------------------------------------------------------------------------------------------------------------------------------------------
+Interlude 2.4.1: Unclosed Parentheses Errors
 
+Python has a slightly strange way of telling you when you have an unclosed parentheses. As a result, "You forgot to close a parentheses" is the single most common answer to students' questions in this course. In this interlude, we'll show you real quick how to discover that yourself.
+
+Why is it hard?
+
+At a glance, it might seem like this should be an easy error to identify and resolve. Why is it hard? Let's do a quick exercise to see why it's difficult.
+
+Copy and paste the following code into IDLE, Repl.It, the Vocareum sandbox, or another tool of your choice. Run it, then answer the following question.
+basecapturerate = 0.33
+cpmultiplier = 0.75
+ball, curve, berry, throw, medal = 1, 1, 1, 1, 1
+baserate = (1 - (basecapturerate / (2 * cpmultiplier))
+multipliers = ball * curve * berry * throw * medal
+probability = 1 - baserate ** multipliers
+print(round(probability, 2))
+
+
+
+So, Python says a syntax error is occurring on this line:
+multipliers = ball * curve * berry * throw * medal
+
+What could the syntax error be? That line looks perfectly fine, right?
+
+That line is perfectly fine. This isn't the line where the error is occurring. Instead, check out the previous line:
+baserate = (1 - (basecapturerate / (2 * cpmultiplier))
+
+There are three open-parenthesis, but only two close-parenthesis. The first parenthesis, between the = and 1, never gets closed. That's a syntax error. Fixing that error fixes the code, and it will run just fine.
+
+
+End of File Errors
+
+Depending on your code, unclosed parentheses can actually manifest as other kinds of errors. That's part of what makes them difficult to uncover. For example, imagine if in the code above, it was actually the last line that had a missing close-parentheses:
+basecapturerate = 0.33
+cpmultiplier = 0.75
+ball, curve, berry, throw, medal = 1, 1, 1, 1, 1
+baserate = (1 - (basecapturerate / (2 * cpmultiplier)))
+multipliers = ball * curve * berry * throw * medal
+probability = 1 - baserate ** multipliers
+print(round(probability, 2)
+
+Here, you would still get a syntax error, but it would read "unexpected EOF while parsing". EOF stands for "end of file" and "parsing" is a fancy word for "reading", so "unexpected EOF while parsing" means that Python encountered the end of the file before it expected to.
+
+So, when you get an error on a line that looks okay, learn to quickly check for unclosed parentheses on the line before.
+
+
+Comments
+
+Note that comments can make this even tougher. An unclosed parentheses will not automatically generate an error on the next line of the file, but rather on the next line of code. So, in this code:
+1| some_var = ((1+2) + (3+4)
+2| 
+3| #The purpose of this line of code
+4| #is to demonstrate what happens
+5| #when an unclosed parenthesis
+6| #is followed by some comments
+7| 
+8| print(some_var)
+
+...the error will be labeled as appearing on line 8, even though it actually is happening on line 1. It isn't until Python encounters another line of code that it notices an error.
+
+Before moving on, let's get one more bit of practice fixing these kinds of errors. Note that this problem will seem simple because we're telling you that there are missing parentheses: your challenge going forward will be realizing that yourself.
