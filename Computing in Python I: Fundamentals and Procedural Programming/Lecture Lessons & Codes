@@ -212,3 +212,35 @@ my_var = "Hello, world!"
 But in Java, we cannot do this:
 int my_var = 5;
 my_var = "Hello, world!";
+----------------------------------------------------------------------------------------------------------------------
+
+
+Numeric Comparison Operators: Operators that facilitate numeric comparison between values. Typically, these are 'greater than' (>), 'greater than or equal to' (>=), 'equal to' (==), 'less than' (<), and 'less than or equal to' (<=).
+
+These operators can sometimes be used for comparisons that are not numeric, but that nonetheless have an underlying order:
+
+    A string of characters is 'less' than another string if it comes earlier alphabetically. "Apple" would be 'less' than "Banana".
+    A date is 'less' than another date if it comes earlier in time. January 1st, 2017 would be 'less' than January 15th, 2017.
+
+Non-Numeric Equality Comparisons: Nearly any kind of data can compare for equality, even if it isn't numeric. We can't ask if an apple is greater than an orange, but we can ask if apples and oranges are 'equal', or the same thing.
+
+In practice, sometimes this will compare values to see if the values of two variables are the same, and other times it will compare if two variables are pointing to the same data in memory. It could be that two variables have the same values, but those values are stored in separate places, and so the computer doesn't recognize them as equal. We'll get to that more in Chapters 3.4 and 4.1.
+------------------------------------------------------------------------------------------------------------------------------------
+
+Set Operators: Check to see if a value is a member of a set of multiple values. Most often this comes up in strings and lists.
+
+With strings, we can check to see if a certain smaller string occurs inside a larger string. For example, "cde" is in the string "abcdefg", but "ijk" is not.
+
+With lists, we can check to see if a certain item is on our list. For example, if we had a list containing "grapes", "apples", and "oranges", then "apples" would be in that set, but "papaya" would not.
+
+Set Operators
+Finally, the other major Python operator we’ll use very often is the in operator. The in operator checks to see if something is contained within a list of things. The in operator is somewhat unique to Python; most languages (like Java and C++) supply the same ability, but with a function or method rather than simply with an operator. Python just makes it a little easier.
+
+For example, we can use the in operator to see if there’s a certain message contained within a longer message. In Figure 2.3.6, the first two print statements say True because “H” and “lo, w” are character sequences within myString. “oll” is “False” because it does not occur within myString. This is effectively like saying, “‘oll’ is in myString?” and having the computer reply, False!
+We haven’t talked much yet about lists, but in is also very useful in lists. Line 1 in Figure 2.3.7 defines a list; we’ll talk more about lists in Unit 3, but for now, just know that this is a list with three strings: “and,” “or,” and “not.” Line 2 asks, “‘and’ is in that list?”, to which the computer replies, True! Line 3 asks, “‘else’ is in that list?”, to which the computer replies, False!
+
+ex) print("abc" in myString)
+ex) print(1 in intList)
+---------------------------------------------------------------------------------------------------------------------
+
+Boolean Operators: Operators like “and” and “or” that act on pairs of boolean (true or false) values, or that act on single boolean values, like “not”.
