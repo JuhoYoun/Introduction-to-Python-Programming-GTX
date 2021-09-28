@@ -244,3 +244,8 @@ ex) print(1 in intList)
 ---------------------------------------------------------------------------------------------------------------------
 
 Boolean Operators: Operators like “and” and “or” that act on pairs of boolean (true or false) values, or that act on single boolean values, like “not”.
+---------------------------------------------------------------------------------------------------------------------
+
+it's True that "Grapes"
+#comes before "apples" alphabetically: Python puts all
+#upper-case letters before all lower-case letters.
