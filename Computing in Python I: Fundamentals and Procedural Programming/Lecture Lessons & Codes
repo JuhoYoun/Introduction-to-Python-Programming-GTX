@@ -320,3 +320,9 @@ Note that comments can make this even tougher. An unclosed parentheses will not 
 ...the error will be labeled as appearing on line 8, even though it actually is happening on line 1. It isn't until Python encounters another line of code that it notices an error.
 
 Before moving on, let's get one more bit of practice fixing these kinds of errors. Note that this problem will seem simple because we're telling you that there are missing parentheses: your challenge going forward will be realizing that yourself.
+--------------------------------------------------------------------------------------------------------------------------
+This treatment of integers and division is another thing that changed from Python 2 to Python 3. In Python 2, division operated like it does in most other programming languages: dividing integers assumes the result should be an integer, and it rounds down if not. Python 3 decided to treat division the way we're accustomed to seeing it in math, forcing division of integers to give a decimal number as a result. But, there are still times when integer division is needed, which is why we have the floor division operator.
+
+---------------------------------------------------------------------------------------------------------------------------
+Generally speaking, it's reasonable to assume that if you mix logical and mathematical operators, Python will evaluate all the mathematical operators before trying to move on to logical ones. For example, given the expression 2 + 5 > 3, Python will evaluate 2 + 5 before trying to evaluate 5 > 3.
+
