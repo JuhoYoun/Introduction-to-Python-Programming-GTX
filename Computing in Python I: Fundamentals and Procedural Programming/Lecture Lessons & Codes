@@ -326,3 +326,5 @@ This treatment of integers and division is another thing that changed from Pytho
 ---------------------------------------------------------------------------------------------------------------------------
 Generally speaking, it's reasonable to assume that if you mix logical and mathematical operators, Python will evaluate all the mathematical operators before trying to move on to logical ones. For example, given the expression 2 + 5 > 3, Python will evaluate 2 + 5 before trying to evaluate 5 > 3.
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+What about exponents? What happens when we throw an exponent at the start and make that expression 2 ** 6 + 3 / 5 * 4 - 2? Exponents actually take even higher priority than multiplication and division. So, we first evaluate the exponent and get 64 + 3 / 5 * 4 - 2. Then we evaluate the multiplication and division (left to right) and get 64 + 2.4 - 2. Then finally, we evaluate this expression and get 64.4.
