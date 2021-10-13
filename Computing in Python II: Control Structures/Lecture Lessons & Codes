@@ -1,1 +1,18 @@
 
+Indentation: Spaces at the beginning of a line that are used to group together blocks of code. All consecutive lines of code at the same level of indentation are in a single code block.
+
+Scope: The portion of a program’s execution during which a variable can be seen and accessed.
+
+Scope can work pretty differently from language to language, so when you start to learn another programming language, be prepared to investigate how scope works in the new language. Generally, it works very differently between scripting languages (like Python) and compiled languages (like Java).
+
+Scope in Python is actually a little bit more straightforward to understand than in many languages, but it also carries its own challenges. Generally, every variable or function we create has a line on which it is created. If that line has already run, then the scope for that variable or function has begun. If it hasn't, then that variable's or function's scope has not yet begun.
+
+Note that a variable's scope begins with the line on which it's created, but that means it cannot be used until the next line. For example, we could not run this line of code unless a_num had already been created:
+a_num = a_num + 1
+
+Typically we describe the scope of a variable as starting on the line on which it's created, but be careful that you're not trying to create and use the variable on the same line: its scope doesn't start until the line has finished running.
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+As we've mentioned before, Python's notion of scope is different from many other languages. In Java, for example, if you define a variable inside a conditional, then the variable ceases to exist when the condition is done. In Python, however the variable continues to exist.
+
