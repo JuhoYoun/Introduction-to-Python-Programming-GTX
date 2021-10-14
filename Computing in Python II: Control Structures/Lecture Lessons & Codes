@@ -52,3 +52,4 @@ The pass keyword is a "no-operation" keyword. It does exactly nothing. It's ofte
 if response == "yes":
     pass  # add "yes" code later.
 
+pass : Break the requirement that control structures must have code within them and skip the body of the control structure 
