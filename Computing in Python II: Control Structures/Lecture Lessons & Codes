@@ -29,3 +29,21 @@ You can use this to find the number of characters between two letters. For examp
 Capital letters are numbered 65 through 90. Lower-case letters are numbered 97 through 122. Numerals are numbered 48 through 57. Reserved system characters are numbered 0 through 31, while the remaining numbers below 127 (32 to 47; 58 to 64; 91 to 96; and 123 to 128) are punctuation marks.
 
 https://www.asciitable.com/
+-------------------------------------------------------------------------------------------------------------------
+
+Loop Control Variable: A variable whose value is the number of times a loop has run. It is used to check if the loop should keep running (e.g. if it has run as many times as it’s supposed to).
+range(begin, end): Takes as input two variables, a first number and a last number, and provides the list of numbers for a for loop to iterate over.
+
+For-Each Loop: A loop control structure that runs a block of code a predetermined number of times, where the number of times comes from the length of some list and the items in the list are automatically loaded into a variable for usage in the block of code.
+
+Iterate: To repeat code a number of times. For example, if a loop runs for each item in a list, the loop “iterates” over the list. Each time the code is repeated is a single iteration.
+
+random.randint(min, max): Returns a random integer greater than or equal to min and less than or equal to max.
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+The three advanced loop keywords we'll cover are:
+
+    continue: Skip the rest of the current iteration of the loop and continue with the next iteration of the loop (if there is a next iteration).
+    break: Skip the rest of the current iteration of the loop and break out of the loop altogether, skipping any later iterations, too.
+    pass: Designate an 'empty' body for a control structure.
+
