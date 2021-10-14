@@ -46,4 +46,9 @@ The three advanced loop keywords we'll cover are:
     continue: Skip the rest of the current iteration of the loop and continue with the next iteration of the loop (if there is a next iteration).
     break: Skip the rest of the current iteration of the loop and break out of the loop altogether, skipping any later iterations, too.
     pass: Designate an 'empty' body for a control structure.
+    
+The pass keyword is a "no-operation" keyword. It does exactly nothing. It's often used as a placeholder for code which will be added later:
+
+if response == "yes":
+    pass  # add "yes" code later.
 
