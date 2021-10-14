@@ -16,3 +16,16 @@ Typically we describe the scope of a variable as starting on the line on which i
 
 As we've mentioned before, Python's notion of scope is different from many other languages. In Java, for example, if you define a variable inside a conditional, then the variable ceases to exist when the condition is done. In Python, however the variable continues to exist.
 
+---------------------------------------------------------------------------------------------------------------------------------------
+
+For this next problem, it will be helpful to know about Python's ordinal function.
+
+Every character has a number associated with it in ASCII. A capital "A" is 65. A capital "B" is 66. A lower-case "z" is 122. A percent sign "%" is 37.
+
+You can find the number associated with a character using the ord() function. For example, ord("A") will return 65. ord("Z") will return 90.
+
+You can use this to find the number of characters between two letters. For example, ord("R") - ord("D") is 14, meaning there are 14 letters between D and R.
+
+Capital letters are numbered 65 through 90. Lower-case letters are numbered 97 through 122. Numerals are numbered 48 through 57. Reserved system characters are numbered 0 through 31, while the remaining numbers below 127 (32 to 47; 58 to 64; 91 to 96; and 123 to 128) are punctuation marks.
+
+https://www.asciitable.com/
