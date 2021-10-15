@@ -95,3 +95,26 @@ The two common errors we'll encounter with functions are:
     Parameter Mismatch: We gave a function more or fewer parameters than it expected.
     Scope Error: We tried to use a variable in a function that was created outside the function, or similarly, we tried to use a variable outside a function that was created inside the function.
 
+------------------------------------------------------------------------------------------------------------------------------------
+
+Where Does None Come From?
+
+Although it can be confusing in practice, the principle of None and functions is relatively simple: if a function does not otherwise return anything, it returns None.
+
+In your mind, you can imagine adding return None as the last line in any function. If no other return statement has already been run, then return None is run and None is returned. Remember, though, running a return statement terminates the function: as soon as one runs, the entire function ends no matter what.
+From Simple to Complex
+
+So when does the function return None? Whenever it ends without returning anything else. In the problem above, notice that result is None whenever the function does not otherwise return something (1, 3), deliberately returns None before returning anything else (5, 7), or returns a different function that itself returns None (8).
+
+For little functions like these, it's usually easy to avoid this issue: after all, you can just check the last line of the function to see if there's a return statement.  Where it becomes difficult is when you start using return statements along with some more complex control structures.
+
+For example, take a look at this function:
+def some_function(number):
+    if number > 0:
+        return "Positive!"
+    elif number < 0:
+        return "Negative!"
+
+What happens if we call some_function(0)? The first conditional is false because 0 is not greater than 0. The second conditional is false because 0 is not less than 0. Then, the function is over: so, it returns None.
+
+This is where debugging these issues becomes difficult: it's not that these functions always return None like the ones in the exercise above, but rather they sometimes return None depending on the input.
