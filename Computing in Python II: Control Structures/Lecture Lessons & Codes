@@ -118,3 +118,6 @@ def some_function(number):
 What happens if we call some_function(0)? The first conditional is false because 0 is not greater than 0. The second conditional is false because 0 is not less than 0. Then, the function is over: so, it returns None.
 
 This is where debugging these issues becomes difficult: it's not that these functions always return None like the ones in the exercise above, but rather they sometimes return None depending on the input.
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+Keyword Parameters: A special kind of optional parameter to which the program may choose to assign an argument during a function call, or may ignore. Typically, keyword parameters have a default value that is used if it is not overridden by a function call.
