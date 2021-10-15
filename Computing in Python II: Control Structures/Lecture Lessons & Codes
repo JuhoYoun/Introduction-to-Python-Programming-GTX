@@ -89,3 +89,9 @@ Normally, when you create a variable inside a function, that variable is local, 
 
 To create a global variable inside a function, you can use the global keyword.
 -------------------------------------------------------------------------------------------------------------------------
+
+The two common errors we'll encounter with functions are:
+
+    Parameter Mismatch: We gave a function more or fewer parameters than it expected.
+    Scope Error: We tried to use a variable in a function that was created outside the function, or similarly, we tried to use a variable outside a function that was created inside the function.
+
