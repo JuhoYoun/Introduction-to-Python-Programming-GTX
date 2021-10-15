@@ -121,3 +121,6 @@ This is where debugging these issues becomes difficult: it's not that these func
 -----------------------------------------------------------------------------------------------------------------------------------------
 
 Keyword Parameters: A special kind of optional parameter to which the program may choose to assign an argument during a function call, or may ignore. Typically, keyword parameters have a default value that is used if it is not overridden by a function call.
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+In Python, what happens when you import inside of a function?   https://stackoverflow.com/questions/3095071/in-python-what-happens-when-you-import-inside-of-a-function
