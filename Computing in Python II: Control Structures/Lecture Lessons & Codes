@@ -247,3 +247,23 @@ else:
         print(line)
     inputFile.close()
     
+Finally
+Finally, we come to the finally block. As mentioned previously, the finally block is for code that needs to run regardless of whether an error was detected or not. With this block, we are now able to cover every possible situation:
+• The try block contains the code to attempt.
+• The except blocks contain the code to run if and only if an expected error type
+occurs.
+• The else block contains the code to run if and only if no errors occur.
+• The finally block contains the code to run regardless of whether or not an
+error occurred.
+
+ex)
+inputFile = open("inputFile.txt", mode = 'r')
+try:
+    for line in inputFile:
+        print(line)    
+except ValueError as e:
+    print("A value error occured")
+else:
+    print("No error occured")
+finally:
+    inputFile.close()
