@@ -218,3 +218,10 @@ else:
     print("No error occured") # Try block does not have error -> go to else after try
 
 print("Done!")
+
+
+Else and File Input
+
+open(filename): Takes as input a filename and returns the file. Once returned, the file can be read line-by-line or written to, depending on the mode. Mode is set with the keyword parameter “mode”, “r” for read, “w” for write, “a” for append.
+
+close(): A method that closes the file of which it’s a member.
