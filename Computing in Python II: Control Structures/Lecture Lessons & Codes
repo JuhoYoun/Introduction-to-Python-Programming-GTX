@@ -124,3 +124,19 @@ Keyword Parameters: A special kind of optional parameter to which the program ma
 
 -----------------------------------------------------------------------------------------------------------------------------------------
 In Python, what happens when you import inside of a function?   https://stackoverflow.com/questions/3095071/in-python-what-happens-when-you-import-inside-of-a-function
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+The three main structures for exception handling in most languages are the try, catch, and finally statements:
+
+    The Try statement marks a block of code to attempt, but in which we anticipate an error might arise.
+    The Catch statement names the errors to anticipate, and marks a block of code to run if an anticipated error arises. (Python often refers to this as the Except block as well.)
+    The Finally statement marks a block of code to run after the above two blocks no matter what.
+
+In Python, there is also an Else block for exception handling: it runs some code only if no errors arose in the Try block.
+
+
+    my_int = int(my_string): This line generates a ValueError if my_string is does not hold a string that can be read as an integer. For example, if my_string was "5" or "1885", no error would arise; if my_string was "Taco." or "Boggle.", an error would arise.
+    print("String #" + 1 + ": " + my_string): This line generates a TypeError because we cannot use the + operator to put together strings (like "String #") and integers (like 1).
+    print(1 / 0): This line generates a ZeroDivisionError error because we cannot divide by zero.
+
