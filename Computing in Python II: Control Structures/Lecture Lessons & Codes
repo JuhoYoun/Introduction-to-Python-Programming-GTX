@@ -200,3 +200,21 @@ print("Done!")
 
 Else and Finally
 Most languages have a Finally statement, but Else (at least as it applies to error handling) is relatively unique to Python.
+
+ex)
+# (23) try except as Exception Else
+my_string = 1
+try:
+    print("Converting into interger")
+    myint = int(my_string)
+    print(myint)
+except Exception as error:
+    print(error)
+    print("Some other type of error occured")
+except (ValueError, TypeError) as error:
+    print(error)
+    print("Value error or type error occured")
+else:
+    print("No error occured") # Try block does not have error -> go to else after try
+
+print("Done!")
