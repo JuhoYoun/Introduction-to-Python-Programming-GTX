@@ -291,3 +291,20 @@ The finally block has one special feature. If there were errors in the try block
 -> 두번째 코드에서는 value error 이외의 에러가 나오면 파일을 닫지 않고 바로 프로그램이 crash 된다 하지만 첫번째 코드에서는 value error 이외의 에러가 나와도 일단 finally 블락 안애서 파일을 먼저 닫고 crash나 난다
 
 
+Nested Try-Catch-Else-Finally
+
+ex)
+try:
+    inputFile = open("inputFile.txt", mode = 'r')
+    try:
+        for line in inputFile:
+            print(line)    
+    except ValueError as e:
+        print("A value error occured")
+    else:
+        print("No error occured")
+    finally:
+        inputFile.close()
+except IOError as error:
+    print("input error occured")
+
