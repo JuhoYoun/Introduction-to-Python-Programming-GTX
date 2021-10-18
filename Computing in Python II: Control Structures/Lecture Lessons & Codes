@@ -196,7 +196,7 @@ except Exception as error:
     print("An error occured")
 print("Done!")
 
-->
+-> try 절에서 에러가 발생하면 첫번째 except으로 갔다가 해당 에러가 value error 나 type error 가 아니면 두번쩨 except 절로 간다 
 
 Else and Finally
 Most languages have a Finally statement, but Else (at least as it applies to error handling) is relatively unique to Python.
