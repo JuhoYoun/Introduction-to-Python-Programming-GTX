@@ -178,5 +178,25 @@ we can treat the error as a variable, named error (or whatever variable name we 
 or access other information about the error. Now instead of printing our prewritten statement, the except block prints whatever it would have printed 
 to the console while crashing by printing error. We get the same information.
 
+ We can specify multiple errors to catch by listing them in parentheses, separated by commas. 
+ 
+ my_string = "This is not an interger string"
+
+try:
+    print("Converting into interger")
+    print("stirng " + 1 + my_string)
+    myint = int(my_string)
+    print(myint)
+    print(1/0)
+except (ValueError, TypeError) as error:
+    print(error)
+    print("Value error or type error occured")
+except Exception as error:
+    print(error)
+    print("An error occured")
+print("Done!")
+
+->
+
 Else and Finally
 Most languages have a Finally statement, but Else (at least as it applies to error handling) is relatively unique to Python.
