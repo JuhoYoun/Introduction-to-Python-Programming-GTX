@@ -159,3 +159,24 @@ ex)
 6| except ZeroDivisionError:
 7|     print("A ZeroDivisionError occurred!")
 8| print("Done!")
+
+We can also take this a step further: if we’re handling unexpected errors or we want to know a little more about why the error arose, 
+we can further extend this to print information about the error itself
+
+my_string = "This is not an interger string"
+
+try:
+    myint = int(my_string)
+    print(myint)
+except ValueError as error:
+    print(error)
+print("Done!")
+
+An error is a data type like integers or strings, and so when we catch it, we can actually grab it as a variable. 
+Adding as error to the end of the except statement means that inside the except block (but not after it, its scope is only inside the except block), 
+we can treat the error as a variable, named error (or whatever variable name we placed after as). We can save it to a file, print it to the console, 
+or access other information about the error. Now instead of printing our prewritten statement, the except block prints whatever it would have printed 
+to the console while crashing by printing error. We get the same information.
+
+Else and Finally
+Most languages have a Finally statement, but Else (at least as it applies to error handling) is relatively unique to Python.
