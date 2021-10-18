@@ -236,4 +236,14 @@ try:
     inputFile.close()
 except IOError as e:
     print("input error occured")
+
+ex)
+try:
+    inputFile = open("inputFile.txt", mode = 'r')
+except IOError as e:
+    print("input error occured")
+else:
+    for line in inputFile:
+        print(line)
+    inputFile.close()
     
