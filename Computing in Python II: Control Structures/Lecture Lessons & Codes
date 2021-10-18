@@ -140,3 +140,22 @@ In Python, there is also an Else block for exception handling: it runs some code
     print("String #" + 1 + ": " + my_string): This line generates a TypeError because we cannot use the + operator to put together strings (like "String #") and integers (like 1).
     print(1 / 0): This line generates a ZeroDivisionError error because we cannot divide by zero.
 
+Catching a Specific Error
+ex)
+1| try:
+2|     print(1 / 0)
+3|     print("No error occurred!")
+4| except ZeroDivisionError:
+5|     print("An error occurred!")
+6| print("Done!")
+
+Catching Multiple Specific Errors 
+ex)
+1| try:
+2|     print(1 / 0)
+3|     print("No error occurred!")
+4| except NameError:
+5|     print("A NameError occurred!")
+6| except ZeroDivisionError:
+7|     print("A ZeroDivisionError occurred!")
+8| print("Done!")
