@@ -225,3 +225,15 @@ Else and File Input
 open(filename): Takes as input a filename and returns the file. Once returned, the file can be read line-by-line or written to, depending on the mode. Mode is set with the keyword parameter “mode”, “r” for read, “w” for write, “a” for append.
 
 close(): A method that closes the file of which it’s a member.
+
+Whenever we load some data from a file, we want to enclose the attempt to load the file in a try block because file input com- monly raises errors; some languages even require file input to happen inside a try block.
+
+ex)
+try:
+    inputFile = open("inputFile.txt", mode = 'r')
+    for line in inputFile:
+        print(line)
+    inputFile.close()
+except IOError as e:
+    print("input error occured")
+    
