@@ -268,7 +268,7 @@ else:
 finally:
     inputFile.close()
 
-위의 코드는 아래의 코드와 같은것이 아닌가?
+위의 코드는 아래의 코드와 같은것이 아닌가? -> 다르다
 
 ex)
 inputFile = open("inputFile.txt", mode = 'r')
@@ -282,4 +282,12 @@ else:
 inputFile.close()
 
 -> how is using the finally block any different from just putting inputFile.close() on line 13, unindented? 
-The answer is that finally has a special behavior when it comes to uncaught errors.
+The answer is that finally has a special behavior when it comes to uncaught errors. 아래의 설명을 들어보자
+
+Finally and Uncaught Errors
+
+The finally block has one special feature. If there were errors in the try block that were not handled by the except blocks, then the finally block still runs.
+
+-> 두번째 코드에서는 value error 이외의 에러가 나오면 파일을 닫지 않고 바로 프로그램이 crash 된다 하지만 첫번째 코드에서는 value error 이외의 에러가 나와도 일단 finally 블락 안애서 파일을 먼저 닫고 crash나 난다
+
+
