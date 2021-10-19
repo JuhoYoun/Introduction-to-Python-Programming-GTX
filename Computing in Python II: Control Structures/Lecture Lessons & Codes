@@ -308,3 +308,10 @@ try:
 except IOError as error:
     print("input error occured")
 
+
+Introduction to Error Handling and Other Control Structures
+
+As we integrate different control structures, it's most important to keep in mind which structure is controlling which. 
+If you put a loop inside a try block, for example, then the entire loop will be terminated when it hits one error. 
+If you put a try block inside a loop, then only the current iteration of the loop will be terminated when it hits one error.
+
