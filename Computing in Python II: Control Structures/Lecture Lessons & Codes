@@ -338,3 +338,20 @@ ex)
 1.0
 2.0
 We can't divide by 0!
+
+nested try except + try in for loop
+
+ex)
+try:
+    inputFile = open("inputFile.txt", mode = 'r')
+    for line in inputFile:
+        try:
+            print(line)    
+        except ValueError as e:
+            print("A value error occured")
+        else:
+            print("No error occured")
+        
+    inputFile.close()
+except IOError as error:
+    print("input error occured")
