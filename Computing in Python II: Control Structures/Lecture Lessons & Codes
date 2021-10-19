@@ -315,3 +315,26 @@ As we integrate different control structures, it's most important to keep in min
 If you put a loop inside a try block, for example, then the entire loop will be terminated when it hits one error. 
 If you put a try block inside a loop, then only the current iteration of the loop will be terminated when it hits one error.
 
+ex)
+1| for i in range(2, -3, -1):    #Counts down from 2 to -2: 2, 1, 0, -1, -2
+2|     try:
+3|         print(2 / i)    #Prints 2 divided by the current value of i
+4|     except ZeroDivisionError:
+5|         print("We can't divide by 0!")
+->
+1.0
+2.0
+We can't divide by 0!
+-2.0
+-1.0
+
+ex)
+1| try:
+2|     for i in range(2, -3, -1):    #Counts down from 2 to -2: 2, 1, 0, -1, -2
+3|         print(2 / i)    #Prints 2 divided by the current value of i
+4| except ZeroDivisionError:
+5|     print("We can't divide by 0!")
+->
+1.0
+2.0
+We can't divide by 0!
