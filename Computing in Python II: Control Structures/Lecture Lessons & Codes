@@ -355,3 +355,8 @@ try:
     inputFile.close()
 except IOError as error:
     print("input error occured")
+    
+    
+additional materials
+https://docs.python.org/3.6/tutorial/errors.html
+https://wiki.python.org/moin/HandlingExceptions
