@@ -15,3 +15,11 @@ Lists: A data structure that holds multiple individual values gathered together 
 File Input and Output: The complementary processes of saving data to a file and loading data from a file, generally such that the state of the memory of the program is the same after saving and loading have occurred.
 
 Dictionaries: A data structure comprised of key-value pairs, where a key is entered into the dictionary to get out a value. Similar to or synonymous with Maps, Associative Arrays, HashMaps, and Hashtables.
+
+Passing by Value vs. Passing by Reference
+
+Passing by Value
+An approach for passing arguments into a function where the function is not able to modify the variable whose value was getting passed, only its local parameter that accepts the argument.
+
+Passing by Reference
+An approach for passing arguments into a function where the function is able to modify the variable whose value was getting passed, changing it for both the function and the code that called the function.
