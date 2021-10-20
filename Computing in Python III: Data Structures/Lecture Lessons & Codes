@@ -8,3 +8,10 @@ List-Like Structures: Also referred to as sequences and collections, a data stru
 
 Index: A number used to access a particular element from a list-like data structure. Traditionally, most programming languages assign the first item of a list-like data structure the index 0.
 
+String: A data structure that holds a list, or a string, of characters.
+
+Lists: A data structure that holds multiple individual values gathered together under one variable name, accessed via indices. Similar to arrays and tuples.
+
+File Input and Output: The complementary processes of saving data to a file and loading data from a file, generally such that the state of the memory of the program is the same after saving and loading have occurred.
+
+Dictionaries: A data structure comprised of key-value pairs, where a key is entered into the dictionary to get out a value. Similar to or synonymous with Maps, Associative Arrays, HashMaps, and Hashtables.
