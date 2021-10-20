@@ -36,3 +36,28 @@ The function then looks up the value on its own, but because it knows the refere
 Passing by Value and Reference in Python
 
 Python deals with passing-by-value and passing-by-reference a little strangely. In reality, everything is passed by reference, but because of some details we'll cover next lesson, it often appears to be passing by value.
+
+integer
+ex)
+def addOne(integer):
+    integer = integer + 1
+    print("integer ", integer)
+i = 1
+print("Before adding one ", i)
+addOne(i)
+print("After adding one ", i)
+
+-> seems Pass by value
+
+string
+ex)
+def addC(astring):
+    astring = astring + "!"
+    print("string ", astring)
+s = "abc"
+print("Before adding ", i)
+addC(s)
+print("After adding ", i)
+
+-> seems Pass by value
+  
