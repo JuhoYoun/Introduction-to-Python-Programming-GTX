@@ -23,3 +23,6 @@ An approach for passing arguments into a function where the function is not able
 
 Passing by Reference
 An approach for passing arguments into a function where the function is able to modify the variable whose value was getting passed, changing it for both the function and the code that called the function.
+
+Reference
+An alias to a variable that already exists. Either the reference or the variable name can be used to access the value stored in that variable.
