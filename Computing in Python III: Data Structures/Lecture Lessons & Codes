@@ -1,0 +1,7 @@
+Data Structures: Approaches to organizing abstract data types, such that the data can be accessed efficiently.
+
+
+
+"Under the hood", everything in computing boils down to 1s and 0s. So, everything is built out of the absolute most basic data types imaginable! The complex behavior we see from the computers we use every day comes because computers know how to interpret 1s and 0s in different ways. A certain combination of 1s and 0s can be interpreted as the letter A or the number 7.
+
+Working with the 1s and 0s directly is extremely difficult, so that's why you and I instead build on a layer that goes ahead and takes care of interpreting 1s and 0s as more complex types. However, dealing with just letters and numbers is still really difficult if we're building complex applications, so in this unit, we'll discuss how we can build and use more complex data types. These data types are still just letters and numbers, but they're organized and accessed in ways that make programming easier.
