@@ -61,3 +61,20 @@ print("After adding ", i)
 
 -> seems Pass by value
   
+list
+ex)
+def addmore(alist):
+    alist.append("Teddy")
+    print(alist)
+l = ["Angie", "Jake"]
+print("Before adding ", l)
+addmore(l)
+print("After adding ", l)
+
+-> seems Pass by reference this time!
+
+Really?
+This means that Python seems to pass primitive data types such as integers and strings by value, and advanced data types such as lists by reference, 
+right? Practi- cally speaking, yes. Accurately speaking, no! The ultimate effect is that it’s as if Python is passing these primitive data types by value, 
+but in reality, something dif- ferent is going on: Python has immutable data types. That gets tricky, though, so we’ll talk about that next lesson. 
+For now, it’s sufficient to know: there are some data types that Python effectively passes “by value”, but for the majority of data types, Python passes by reference.
