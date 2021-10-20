@@ -100,3 +100,13 @@ Line 2 here sets the value of my_string equal to what it would be if it was uppe
 ------------------------------------------------------------------------------------------------------------------------------
 
 Variable Assignments
+
+integer
+ex)
+int_a = 1
+int_b = int_a + 1
+int_a = 3
+print(int_a, int_b)
+
+-> seems assignment by value
+
