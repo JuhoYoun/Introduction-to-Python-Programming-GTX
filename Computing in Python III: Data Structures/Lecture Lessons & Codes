@@ -121,6 +121,11 @@ print(list_b)
 -> seems assignment by reference
 -> list_b is set equal to reference to list_a
 -> list_a and list_b are pointing to the same data
+
+You might notice something in these examples: generally, if we modify a variable's value using a method (like my_list.append("An Item")), 
+then usually it mirrors the "assignment by reference" idea. If we modify a variable's value using an operator (like my_int += 1 or my_string = my_string + "1"), 
+then it mirrors the "assignment by value" idea. That's because operators usually only work on more "primitive" data types, 
+and more "primitive" data types are usually assigned or passed "by value".
 -------------------------------------------------------------------------------------------------
 
 Mutability in Python
