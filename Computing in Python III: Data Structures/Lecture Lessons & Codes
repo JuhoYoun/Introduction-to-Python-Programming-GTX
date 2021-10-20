@@ -32,7 +32,7 @@ find its reference (E1559), use the reference to find the value (5), and then te
 When we pass by reference, we grab the variable name (File A), find its refer- ence (E1559), and pass that reference directly to the function (“Hey Addison, the value stored at E1559 and...”). 
 The function then looks up the value on its own, but because it knows the reference, it can change the value if it wants to. It doesn’t have to, but it can.
 
-
+---------------------------------------------------------------------------------------------------------------------------------------------
 Passing by Value and Reference in Python
 
 Python deals with passing-by-value and passing-by-reference a little strangely. In reality, everything is passed by reference, but because of some details we'll cover next lesson, it often appears to be passing by value.
@@ -121,3 +121,6 @@ print(list_b)
 -> seems assignment by reference
 -> list_b is set equal to reference to list_a
 -> list_a and list_b are pointing to the same data
+-------------------------------------------------------------------------------------------------
+
+Mutability in Python
