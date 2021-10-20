@@ -110,3 +110,14 @@ print(int_a, int_b)
 
 -> seems assignment by value
 
+list
+ex)
+list_a = ['a', 'b']
+list_b = list_a
+list_a.append('c')
+print(list_a)
+print(list_b)
+
+-> seems assignment by reference
+-> list_b is set equal to reference to list_a
+-> list_a and list_b are pointing to the same data
