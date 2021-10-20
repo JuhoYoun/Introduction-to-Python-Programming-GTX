@@ -78,3 +78,22 @@ This means that Python seems to pass primitive data types such as integers and s
 right? Practi- cally speaking, yes. Accurately speaking, no! The ultimate effect is that it’s as if Python is passing these primitive data types by value, 
 but in reality, something dif- ferent is going on: Python has immutable data types. That gets tricky, though, so we’ll talk about that next lesson. 
 For now, it’s sufficient to know: there are some data types that Python effectively passes “by value”, but for the majority of data types, Python passes by reference.
+
+
+We'll cover strings next chapter, and lists after that. It's worth noting here, though, that one of the most common mistakes when working with strings comes from this concept. For example, strings have a method called upper() that returns an uppercase version of the string. For example:
+1| my_string = "David"
+2| print(my_string.upper())
+
+Notice we're using dot notation here -- upper() is a method that acts on my_string. We'll talk about this more in a couple lessons.
+
+The code above will print "DAVID", the upper case version of the value of my_string. However, this code...
+1| my_string = "David"
+2| my_string.upper()
+3| print(my_string)
+
+...prints "David". my_string.upper() doesn't change the value of my_string -- it just returns the value that results from making a certain change. It tells you what the uppercase version of myString would be, but it doesn't actually change myString to its uppercase version. To do that, we would have to do this:
+1| my_string = "David"
+2| my_string = my_string.upper()
+3| print(my_string)
+
+Line 2 here sets the value of my_string equal to what it would be if it was uppercase, effectively making the conversion.
