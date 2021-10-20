@@ -79,7 +79,7 @@ right? Practi- cally speaking, yes. Accurately speaking, no! The ultimate effect
 but in reality, something dif- ferent is going on: Python has immutable data types. That gets tricky, though, so we’ll talk about that next lesson. 
 For now, it’s sufficient to know: there are some data types that Python effectively passes “by value”, but for the majority of data types, Python passes by reference.
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 We'll cover strings next chapter, and lists after that. It's worth noting here, though, that one of the most common mistakes when working with strings comes from this concept. For example, strings have a method called upper() that returns an uppercase version of the string. For example:
 1| my_string = "David"
 2| print(my_string.upper())
@@ -97,3 +97,6 @@ The code above will print "DAVID", the upper case version of the value of my_str
 3| print(my_string)
 
 Line 2 here sets the value of my_string equal to what it would be if it was uppercase, effectively making the conversion.
+------------------------------------------------------------------------------------------------------------------------------
+
+Variable Assignments
