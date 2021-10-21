@@ -140,9 +140,16 @@ immutable : a value can not change once the value is allocated on a memory spot
 
 Basically, python pass value by reference. But it seems pass by value sometimes.
 
-mutable 
+immutable data type
 
 ex)
 int_a = 1
 int_b = int_a
 print(id(int_a), id(int_b)) # int_a and int_b point to same memory spot -> pass by reference
+int_b = int_b + 1
+print(id(int_a), id(int_b)) # int_a still points to the same memory spot but int_b points to differenct memory spot 
+-> This is because integer is immutable data type -> On this line, the code reassign a value (2) to int_b howerver the memory spot where int_b points cannot store 
+different value because 1 is already stored in that memory spot and integer is not immutable so the value 1 cannot be changed to 2 -> so ptyhon just allocate another memory spot to 
+store integer 2 and let int_b points to the new memory spot
+
+
