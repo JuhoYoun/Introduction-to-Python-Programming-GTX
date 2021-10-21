@@ -152,4 +152,12 @@ print(id(int_a), id(int_b)) # int_a still points to the same memory spot but int
 different value because 1 is already stored in that memory spot and integer is not immutable so the value 1 cannot be changed to 2 -> so ptyhon just allocate another memory spot to 
 store integer 2 and let int_b points to the new memory spot
 
+ex)
+def addOne(anInteger):
+    print(id(anInteger))
+    anInteger = anInteger + 1
+    print(id(anInteger))
 
+someInteger = 1
+print(id(someInteger))
+addOne(someInteger)
