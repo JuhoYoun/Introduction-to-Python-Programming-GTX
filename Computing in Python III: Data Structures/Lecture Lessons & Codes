@@ -182,15 +182,15 @@ print(id(list_a), id(list_b)) # list_a and list_b still point to the same memory
 
 ex)
 def addCharacter(aList):
-    print(id(aList))
-    aList.append('d')
-    print(aList)
-    print(id(aList))
+    print(id(aList)) # same address as someList
+    aList.append('d') #d is added to aList
+    print(aList) 
+    print(id(aList)) # address not changed
     
 someList = ['a', 'b', 'c']
 print(id(someList))
 addCharacter(someList)
-print(someList)
-print(id(someList))
+print(someList) # d is added to someList
+print(id(someList)) # address not changed
 
 
