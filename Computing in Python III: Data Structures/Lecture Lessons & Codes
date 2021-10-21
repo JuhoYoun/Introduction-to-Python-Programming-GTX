@@ -193,4 +193,13 @@ addCharacter(someList)
 print(someList) # d is added to someList
 print(id(someList)) # address not changed
 
+ex)
+list_a = ['a', 'b', 'c']
+list_b = list_a
+print(list_a, list_b) # list_a and list_b point to the same memory spot therefore print the same list
+print(id(list_a), id(list_b)) # both point to same address 
+list_a = ['a', 'b', 'c', 'd'] # reasign a value to list_a -> this time the value in the memory spot does not change but python allocate a new memory spot and store new list in that memory and let list_a point to the memory!
+print(list_a, list_b) # list_b still point the first memory spot so only has a b c but list_a points to different memory spot and print a b c d
+print(id(list_a), id(list_b)) # of course they have different addresses
 
+-> reassigning is different from append() method -> append() method modify the value in a memory but reassigning just create new memory spot
