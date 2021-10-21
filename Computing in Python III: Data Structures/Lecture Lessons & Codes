@@ -139,3 +139,10 @@ immutable : a value can not change once the value is allocated on a memory spot
 
 
 Basically, python pass value by reference. But it seems pass by value sometimes.
+
+mutable 
+
+ex)
+int_a = 1
+int_b = int_a
+print(id(int_a), id(int_b)) # int_a and int_b point to same memory spot -> pass by reference
