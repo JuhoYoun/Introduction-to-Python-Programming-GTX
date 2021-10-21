@@ -215,3 +215,7 @@ list_a = ['a']
 list_b = ['a']
 print(id(list_a), id(list_b)) # different address!
 
+-> separately assigned to the value 1; yet, because Python creates 1 in memory, it simply assigns both variables to point at the same spot. This only works because integers are immutable:
+-> Mutable variables will behave differently, the two lists are assigned the same value. Because they are mutable, though, Python creates that value twice in memory.
+
+
