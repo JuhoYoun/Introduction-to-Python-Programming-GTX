@@ -129,3 +129,7 @@ and more "primitive" data types are usually assigned or passed "by value".
 -------------------------------------------------------------------------------------------------
 
 Mutability in Python
+
+Immutable Data Types : integer, float, boolean, string, tuple, frozen set, byte
+
+Mutable Data Types : list, set, dictionary, byte array
