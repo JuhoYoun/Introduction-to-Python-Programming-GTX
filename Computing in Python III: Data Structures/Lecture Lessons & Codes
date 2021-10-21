@@ -219,4 +219,14 @@ print(id(list_a), id(list_b)) # different address!
 -> separately assigned to the value 1; yet, because Python creates 1 in memory, it simply assigns both variables to point at the same spot. This only works because integers are immutable:
 -> Mutable variables will behave differently, the two lists are assigned the same value. Because they are mutable, though, Python creates that value twice in memory.
 
+----------------------------------------------------------------------------------------------------------------------------------
+
+String: A data structure that holds a list, or a string, of characters.
+
+Character: A single letter, number, symbol, or special character.
+
+Unicode: A computing industry standard that sets what hexadecimal codes correspond to what characters, so that text appears consistent across platforms.
+
+Hexadecimal: A short-hand expression of the ones and zeroes that comprise computer data, comprised of 16 characters, 0 through 9 and A through F.
+
 
