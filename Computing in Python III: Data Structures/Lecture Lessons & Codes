@@ -136,3 +136,6 @@ Mutable Data Types : list, set, dictionary, byte array
 
 mutable : a value can change after the value is allocated on a memory spot
 immutable : a value can not change once the value is allocated on a memory spot
+
+
+Basically, python pass value by reference. But it seems pass by value sometimes.
