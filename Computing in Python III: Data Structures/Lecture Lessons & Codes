@@ -161,3 +161,15 @@ def addOne(anInteger):
 someInteger = 1
 print(id(someInteger))
 addOne(someInteger)
+
+
+mutable data type
+
+ex)
+list_a = ['a', 'b', 'c']
+list_b = list_a
+print(id(list_a), id(list)b)) # list_a and list_b point to same memory spot
+list_b.append('d') #add d in list_b
+print(list_a, list_b) # d is also added in list_a -> list_a and list_b point same list and the list is changed then both list_a and list_b are changed
+print(id(list_a), id(list_b)) # list_a and list_b still point to the same memory spot
+
