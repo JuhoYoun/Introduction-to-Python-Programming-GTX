@@ -138,7 +138,8 @@ mutable : a value can change after the value is allocated on a memory spot
 immutable : a value can not change once the value is allocated on a memory spot
 
 
-Basically, python pass value by reference. But it seems pass by value sometimes.
+All variables in Python are passed by reference. However, we saw some appear to act as if they're passed by value. The reason they acted this way is because they were immutable. 
+Keep watching and we'll explore that more.
 
 immutable data type
 
