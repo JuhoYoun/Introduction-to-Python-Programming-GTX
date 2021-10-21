@@ -235,3 +235,7 @@ A line feed means moving one line forward. The code is \n.
 A carriage return means moving the cursor to the beginning of the line. The code is \r.
 
 Windows editors often still use the combination of both as \r\n in text files. Unix uses mostly only the \n.
+
+Have you ever created a plain text file on Mac OS or Unix and then opened it on Windows, only to find everything was on one line? 
+That’s because Mac OS uses the line feed character to represent its new line, while Windows uses both carriage returns and line feeds. 
+When Windows sees just line feeds, it doesn’t render them the same way.
