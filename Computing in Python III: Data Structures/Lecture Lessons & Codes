@@ -229,4 +229,9 @@ Unicode: A computing industry standard that sets what hexadecimal codes correspo
 
 Hexadecimal: A short-hand expression of the ones and zeroes that comprise computer data, comprised of 16 characters, 0 through 9 and A through F.
 
+Newline Character: A Unicode character, either LF (line feed) or CR (carriage return), that is rendered as the beginning of a new line of text.
 
+A line feed means moving one line forward. The code is \n.
+A carriage return means moving the cursor to the beginning of the line. The code is \r.
+
+Windows editors often still use the combination of both as \r\n in text files. Unix uses mostly only the \n.
