@@ -202,4 +202,16 @@ list_a = ['a', 'b', 'c', 'd'] # reasign a value to list_a -> this time the value
 print(list_a, list_b) # list_b still point the first memory spot so only has a b c but list_a points to different memory spot and print a b c d
 print(id(list_a), id(list_b)) # of course they have different addresses
 
--> reassigning is different from append() method -> append() method modify the value in a memory but reassigning just create new memory spot
+-> reassigning is different from append() method -> append() method modify the value in a memory but reassigning just create a new memory spot
+
+
+More things to know.....
+
+a = 1
+b = 1
+print(id(a), id(b)) # same address they have! 
+
+list_a = ['a']
+list_b = ['a']
+print(id(list_a), id(list_b)) # different address!
+
