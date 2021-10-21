@@ -188,6 +188,7 @@ def addCharacter(aList):
     print(id(aList))
     
 someList = ['a', 'b', 'c']
+print(id(someList))
 addCharacter(someList)
 print(someList)
 print(id(someList))
