@@ -179,3 +179,17 @@ print(list_a, list_b) # d is also added in list_a -> list_a and list_b point sam
 print(id(list_a), id(list_b)) # list_a and list_b still point to the same memory spot
 
 -> append() method is not reassining append() actually change the value stored in a memory spot
+
+ex)
+def addCharacter(aList):
+    print(id(aList))
+    aList.append('d')
+    print(aList)
+    print(id(aList))
+    
+someList = ['a', 'b', 'c']
+addCharacter(someList)
+print(someList)
+print(id(someList))
+
+
