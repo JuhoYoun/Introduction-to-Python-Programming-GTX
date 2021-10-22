@@ -244,3 +244,9 @@ When Windows sees just line feeds, it doesn’t render them the same way.
 
 Escape Sequence
 A sequence of characters that, when occurring in a string, is interpreted to have a meaning beyond the characters themselves. The most common example is “\n”, which is interpreted by many languages as representing a newline character.
+
+• \n, which inserts a new line.
+• \t, which inserts a tab.
+• \", which inserts a quotation mark without terminating the string (another way
+to include quotation marks and apostrophes inside strings).
+• \\, which inserts a forward slash without interpreting it as an escape character (note that otherwise, the \n at the end of the string would have been a new line).
