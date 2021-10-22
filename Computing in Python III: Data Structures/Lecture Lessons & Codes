@@ -239,3 +239,8 @@ Windows editors often still use the combination of both as \r\n in text files. U
 Have you ever created a plain text file on Mac OS or Unix and then opened it on Windows, only to find everything was on one line? 
 That’s because Mac OS uses the line feed character to represent its new line, while Windows uses both carriage returns and line feeds. 
 When Windows sees just line feeds, it doesn’t render them the same way.
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+Escape Sequence
+A sequence of characters that, when occurring in a string, is interpreted to have a meaning beyond the characters themselves. The most common example is “\n”, which is interpreted by many languages as representing a newline character.
