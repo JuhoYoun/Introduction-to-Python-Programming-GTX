@@ -250,3 +250,16 @@ A sequence of characters that, when occurring in a string, is interpreted to hav
 • \", which inserts a quotation mark without terminating the string (another way
 to include quotation marks and apostrophes inside strings).
 • \\, which inserts a forward slash without interpreting it as an escape character (note that otherwise, the \n at the end of the string would have been a new line).
+
+String Concatenation
+The process of putting two or more strings together in order
+to form one string made of the individual strings. For example, concatenating “A” with “B” would give “AB”.
+
+ex)
+myString1 = "12345"
+myString2 = "67890"
+myString3 = myString1 + myString2
+print("Assignment Concatenation: " + myString3)
+print("In-Line Concatenation: " + myString1 + myString2)
+myString1 += myString2
+print("Self-Assignment Concatenation: " + myString1)
