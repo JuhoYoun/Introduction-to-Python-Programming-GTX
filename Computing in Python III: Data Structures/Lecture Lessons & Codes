@@ -263,3 +263,9 @@ print("Assignment Concatenation: " + myString3)
 print("In-Line Concatenation: " + myString1 + myString2)
 myString1 += myString2
 print("Self-Assignment Concatenation: " + myString1)
+
+
+String Slicing: The Python term for obtaining substrings from within a string based on character indices.
+
+Zero-Indexing: A convention in most programming languages where the first item of a list of items is considered the “0th” item, not the 1st item.
+
