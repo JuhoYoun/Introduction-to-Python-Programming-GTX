@@ -269,3 +269,6 @@ String Slicing: The Python term for obtaining substrings from within a string ba
 
 Zero-Indexing: A convention in most programming languages where the first item of a list of items is considered the “0th” item, not the 1st item.
 
+Why zero-indexing? This goes all the way back to the early days of computing. Remember, a variable points to a place in memory where the value is stored. 
+Early on, lists were technically just consecutive locations in memory. The index told the list how many places in memory to skip. To get the first item in a list, 
+you wouldn’t skip any places in memory, so your index would be 0.
