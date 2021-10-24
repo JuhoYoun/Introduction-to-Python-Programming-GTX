@@ -297,4 +297,13 @@ split([separator])
 A method of the string data type that will split a string up into a list of smaller strings. 
 If a separator string is given, that string will be used to determine where to split; if not, the string will be split by spaces.
 
-
+Other Useful String Methods
+The Python string class has a lot of utility methods for modifying our strings in predictable and useful ways. Here are a few of them:
+• capitalize(). Makes the first letter of the string uppercase and all the rest lowercase, and returns the result.
+• lower(). Returns a version of the string with all uppercase letters changed to lowercase.
+• upper(). Returns a version of the string with all lowercase letters changed to uppercase.
+• title(). Returns a version of the string with each word (e.g., letter following a space) capitalized.
+• strip(). Returns a version of the string with any whitespaces (spaces, line breaks, etc.) at the beginning and end of the string removed. rstrip() and lstrip() apply this strip() method only to the right or left sides of the string.
+• replace(old, new). Replace all occurrences of the substring old with the substring new.
+• rfind(findString). Just like find(), but returns the last index of findString instead of the first.
+• join(list). Creates a string where each item in the list is followed by the string, and returns the result.
