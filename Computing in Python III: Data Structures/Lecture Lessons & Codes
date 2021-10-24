@@ -307,3 +307,21 @@ The Python string class has a lot of utility methods for modifying our strings i
 • replace(old, new). Replace all occurrences of the substring old with the substring new.
 • rfind(findString). Just like find(), but returns the last index of findString instead of the first.
 • join(list). Creates a string where each item in the list is followed by the string, and returns the result.
+
+Additionally, Python has some interesting boolean methods that simply check if certain criteria are true about the string, returning True if so and False if not:
+• endswith(suffix). Returns True if the string ends with suffix, False if not.
+• startswith(prefix). Returns True if the string starts with prefix, False if
+not.
+• isalnum(). Returns True if the string is all letters and numbers, False if not.
+• isalpha(). Returns True if the string is all letters, False if not.
+• isdecimal(). Returns True if the string represents an integer or decimal
+number, False if not.
+• isdigit(). Returns true if the string is all numbers (e.g., represents an
+integer), False if not. isnumeric() is similar, but supports fraction and other
+characters as well (which are rarely used).
+• islower(). Returns True if the string contains no uppercase letters, False
+if not.
+• isupper(). Returns True if the string contains no lowercase letters, False
+if not.
+• istitle(). Returns True if the string is in title case, meaning each word is
+capitalized, and False if not.
