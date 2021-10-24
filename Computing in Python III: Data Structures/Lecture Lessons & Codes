@@ -287,3 +287,14 @@ find method
 
 find(text, [start], [end]): A method of the string data type that will find the first instance of the value of text within the string calling the method. Optionally, 
 also takes parameters start and end to mark where to search in the string (index). Returns -1 if text cannot be found.
+
+
+Useful String Methods in Python
+
+Split()
+
+split([separator])
+A method of the string data type that will split a string up into a list of smaller strings. 
+If a separator string is given, that string will be used to determine where to split; if not, the string will be split by spaces.
+
+
