@@ -286,4 +286,4 @@ The in operator can be used with strings to check if a substring is part of a st
 find method
 
 find(text, [start], [end]): A method of the string data type that will find the first instance of the value of text within the string calling the method. Optionally, 
-also takes parameters start and end to mark where to search in the string. Returns -1 if text cannot be found.
+also takes parameters start and end to mark where to search in the string (index). Returns -1 if text cannot be found.
