@@ -325,3 +325,24 @@ if not.
 if not.
 • istitle(). Returns True if the string is in title case, meaning each word is
 capitalized, and False if not.
+--------------------------------------------------------------------------------------------------------------------------------
+
+Homogeneity: A property of lists determining whether they can accept multiple types of variables. A homogenous list can only accept one type of variable; a nonhomogenous or heterogenous list can accept multiple types.
+
+
+If you're interested in seeing a more comprehensive overview of tuples in Python, check out the documentation on tuples from Python.org. 
+https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences
+
+Tuple: An immutable form of a list-like structure in Python.
+
+Lists: A mutable form of a list-like structure in Python.
+
+When printing strings, Python leaves out the quotation marks. For example, this code...
+my_string = "Hello world!"
+print(my_string)
+
+...will output Hello, world!, without any quotation marks. However, if a string is in a tuple, Python will show the quotation marks. For example, this code...
+my_tuple = ("Hello", "world!")
+print(my_tuple)
+
+...will output ("Hello", "world!"). The quotation marks are included. You might also find it outputs this in slightly different ways in different environments: sometimes it will use apostrophes instead of quotation marks, for example.
