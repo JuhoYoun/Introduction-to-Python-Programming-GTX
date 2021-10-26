@@ -346,3 +346,11 @@ my_tuple = ("Hello", "world!")
 print(my_tuple)
 
 ...will output ("Hello", "world!"). The quotation marks are included. You might also find it outputs this in slightly different ways in different environments: sometimes it will use apostrophes instead of quotation marks, for example.
+
+
+
+The real value of tuples comes in places where we can only pass one vari- able back and forth, but we want to pass multiple values. 
+The most prominent example of that is the return statements of functions. A function or method can only return one value, but if it returns a tuple, it can actually return multiple values contained within that list.
+
+
+
