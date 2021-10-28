@@ -354,5 +354,24 @@ The most prominent example of that is the return statements of functions. A func
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+So, everything you learned about tuples still applies to lists. The declarations are the same (just with brackets instead of parentheses), accessing elements is the same, slicing is the same, unpacking is the same, nesting is the same. What’s different, then?
 
+List Functions
+What differentiates lists is that they’re mutable. That means there are a lot of inter- esting things we can do with lists that we haven’t been able to do with strings or tuples. Let’s run through a few of them:
+• append(item). Adds item to the end of the list, lengthening the list by one. • insert(index, item). Inserts item at the given index. For example, insert(1, newItem) would make newItem the second item on the list
+(because lists are zero-indexed).
+• sort(). Sorts the items in the list in place. This will change the values associ-
+ated with each index in the list.
+
+• reverse(). Reverses the current order of the list. This will also change the values associated with each index in the list.
+• copy(). Returns a copy of the list.
+• index(item). Returns the index of the first element in the list whose value
+matches item.
+• count(item). Returns the count of elements in the list whose values match
+item.
+• remove(item). Removes the first element in the list whose value matches item.
+• pop(). Removes and returns the last item on the list.
+• clear(). Removes all items from the list.
+• extend(incomingList). Appends all the items in incomingList to the
+current list. Note that this adds the items in incomingList one-by-one to the current list; it doesn’t add incomingList itself as an item to the current list. incomingList could be a list or a tuple.
 
