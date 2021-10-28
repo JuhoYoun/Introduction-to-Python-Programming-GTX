@@ -375,3 +375,5 @@ item.
 • extend(incomingList). Appends all the items in incomingList to the
 current list. Note that this adds the items in incomingList one-by-one to the current list; it doesn’t add incomingList itself as an item to the current list. incomingList could be a list or a tuple.
 
+In addition, there are a couple of other ways we can examine and modify lists. The in operator can still be used to check to see if a particular value is present in a list; it will return True if the value is present, 
+False if the value isn’t. We can also use the reserved word del to delete items from the list by their index. We can combine del with our syntax for slicing lists to delete any slice that we want to remove.
