@@ -442,3 +442,11 @@ Advanced List-like data structure
 
 It's possible to create stacks and queues using the normal Python library simply by only interacting with lists in specific ways. 
 However, the value of these approaches comes in how they're used in languages like C, where they grant significant performance advantages.
+
+Stack
+Imagine you were programming a robot to search for your keys in your house or apartment. You would want it to search each room, and within each room search each piece 
+of furniture, and within each piece of furniture search each drawer. So, what would you do? You’d initially give it three commands: 
+search­Kitchen, search­Bedroom, and search­Bathroom. search­Kitchen, though, would be unpacked to find search­Counters, search­Drawers, and search­ Cabinets. 
+You would want the robot to do all three of these things before moving on to search the bedroom. So, you’d push those three commands on top of the stack of orders, 
+then pop them off one by one. That way, you would ensure the robot would not move on to the bedroom until it had finished checking the kitchen.
+This is actually analogous to an advanced computing topic called depth-first search that comes from the advanced data structure trees. These are both outside the scope of this material, but you’ll get to them in a future computing class
