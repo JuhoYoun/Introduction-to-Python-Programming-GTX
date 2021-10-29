@@ -450,3 +450,9 @@ search­Kitchen, search­Bedroom, and search­Bathroom. search­Kitchen, though,
 You would want the robot to do all three of these things before moving on to search the bedroom. So, you’d push those three commands on top of the stack of orders, 
 then pop them off one by one. That way, you would ensure the robot would not move on to the bedroom until it had finished checking the kitchen.
 This is actually analogous to an advanced computing topic called depth-first search that comes from the advanced data structure trees. These are both outside the scope of this material, but you’ll get to them in a future computing class
+
+Queue
+For practical reasons, stacks tend to be a little more efficient as well: when using a queue, every time we dequeue an item, we have to update the indices of every other 
+item in the list to decrease them by one. When using advanced computers that isn’t a big issue, but when you use computers of earlier generations, which are comparatively 
+slower, that could present a major difficulty.
+
