@@ -456,3 +456,22 @@ For practical reasons, stacks tend to be a little more efficient as well: when u
 item in the list to decrease them by one. When using advanced computers that isn’t a big issue, but when you use computers of earlier generations, which are comparatively 
 slower, that could present a major difficulty.
 
+Linkedlist
+In lower-level languages (i.e., languages that are closer to the real functions of a computer), memory is typically allocated in contiguous blocks. 
+That’s why lists in these languages have to be declared with their lengths in advance: If you need a list with 40 memory spots, the computer has to find an area of memory 
+with 40 consecu- tive spots open. If you then need a 41st, there’s no guarantee the 41st spot is open.
+Higher-level languages abstract over this process. While they’re written to mimic interacting with a contiguous block of memory, in reality there might be pointers to different 
+areas of memory. A list with five items might store those five items in various different places in memory, and when you request the second item, it goes and looks up the next 
+item’s memory location. With older computers, though, even those look-ups could take some notable time, especially if you were doing a lot of them. Inserting was a particularly 
+high-intensity operation: if you wanted to insert an item in the middle of a list, the computer had to go through and change its locations for every item after it in the list.
+A linked list operates differently. Instead of one list of memory pointers, each item in the list would contain both its value and a pointer to the next item in the list. 
+So, if you wanted to get item #6, you would find its location from item #5. This makes certain operations significantly more efficient. Iterating, for example, wouldn’t require 
+the computer to return to its list of memory locations each time it wanted to move to the next item: the next item’s location was stored with the current item. Inserting was a breeze 
+as well: instead of having to update every item’s index, only the previous item had to be updated. If we wanted to insert a new item #6, we would just have to change item #5 to point 
+to the new item #6; the new item #6 would then point to the old item #6, which is now #7.
+Of course, other operations are significantly less efficient. In a linked list, the computer has to iterate through every previous item to find an item with a given index; there’s no way 
+to jump straight to item #7 like there is with a regular list. But if we’re iterating and inserting far more than we’re jumping into the center of the list, then a linked list could grant 
+some significant efficiency gains. Many of these issues have gone away as computers have gotten faster, but the underlying concepts are still part of the core of computing theory.
+
+
+
