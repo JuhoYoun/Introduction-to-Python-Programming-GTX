@@ -431,3 +431,10 @@ my2DList = [[91, 95, 89, 92, 85],
 
 print("Averages:", TwoDAverage(my2DList))
 
+Common Conventions for Lists and Tuples:
+• Use tuples when the number of items is known in advance.
+• Use lists when the number of items may change.
+• Use tuples for heterogenous collections.
+• Use lists for homogenous collections.
+
+
