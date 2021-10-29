@@ -437,4 +437,8 @@ Common Conventions for Lists and Tuples:
 • Use tuples for heterogenous collections.
 • Use lists for homogenous collections.
 
+----------------------------------------------------------------------------------------------------------
+Advanced List-like data structure 
 
+It's possible to create stacks and queues using the normal Python library simply by only interacting with lists in specific ways. 
+However, the value of these approaches comes in how they're used in languages like C, where they grant significant performance advantages.
