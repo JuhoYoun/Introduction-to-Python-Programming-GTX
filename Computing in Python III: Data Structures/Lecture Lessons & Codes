@@ -473,5 +473,10 @@ Of course, other operations are significantly less efficient. In a linked list, 
 to jump straight to item #7 like there is with a regular list. But if we’re iterating and inserting far more than we’re jumping into the center of the list, then a linked list could grant 
 some significant efficiency gains. Many of these issues have gone away as computers have gotten faster, but the underlying concepts are still part of the core of computing theory.
 
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+File Input / Output
+
+Writing
 
 
