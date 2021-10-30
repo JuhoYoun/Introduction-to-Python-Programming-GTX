@@ -478,7 +478,9 @@ some significant efficiency gains. Many of these issues have gone away as comput
 File Input / Output
 
 Writing
+“w” tells the computer to open the file and rewrite it from the beginning; the original file contents are overwritten.
 
 Append
-
+If we instead use the “a” argument, the computer opens the file in “append” mode. It’s ready to write, but starting 
+at the end of the file instead of the beginning, keeping the original contents.
 
