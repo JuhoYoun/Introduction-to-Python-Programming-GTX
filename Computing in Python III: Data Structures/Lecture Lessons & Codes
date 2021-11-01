@@ -484,3 +484,12 @@ Append
 If we instead use the “a” argument, the computer opens the file in “append” mode. It’s ready to write, but starting 
 at the end of the file instead of the beginning, keeping the original contents.
 
+Reading
+
+readline()
+readline() reads to the next line break, then returns the string that results. This moves the reader forward to the start of the next line, 
+so when we call readline(), the next line is passed permanently; if we don’t save the results in a variable, we can’t go back and read it again without completely 
+reopening the file from scratch
+Note also that the line breaks are included in what is read from the file. If we want to store or print the lines without the line breaks (as we often might), 
+we need to strip the whitespace off of them.
+
