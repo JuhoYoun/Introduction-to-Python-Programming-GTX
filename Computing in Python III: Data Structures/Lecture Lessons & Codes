@@ -498,3 +498,14 @@ Positional Parameter vs Keyword Parameter https://problemsolvingwithpython.com/0
 
 open vs with open in python https://stackoverflow.com/questions/31334061/file-read-using-open-vs-with-open     https://www.pythonforbeginners.com/files/with-statement-in-python    https://uwpce-pythoncert.github.io/ProgrammingInPython/modules/Exceptions.html
 When return inside wuth open block  https://stackoverflow.com/questions/9885217/in-python-if-i-return-inside-a-with-block-will-the-file-still-close
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Dictionary
+
+Dictionary Terminology
+I keep referring to this data structure as a dictionary because the original language of this material refers to it as a dictionary, but different languages have different names for structures like these. They can sometimes have subtle differences, but generally the concept is the same:
+• “Dictionary,” our current term, is so named because it echoes the idea of looking up words (keys) to find their definitions (values). Dictionaries suggest (but do not require) that the keys will be strings. Python, Swift, and the .NET languages use this term.
+• “Map” is essentially a synonym to Dictionary. Some languages use the term “Map” because it echoes the mapping between keys and values and reinforce that keys need not be strings. Java and C++ use “Map”.
+• “Associative Array” is another synonym. This term echoes the idea of two arrays with associations between them. PHP, JavaScript, and others sometimes use this term.
+• “Hash,” “Hashtable,” and “HashMap” are implementations of Dictionaries or Maps. These terms are somewhat synonymous, although they contain an extra layer of detail; the term “Hash” refers to the way in which the data structure is constructed, not just how it is used. Perl, Lisp, and Ruby use some of these terms.
+So, if you see any of these terms, know that they refer to effectively the same thing: a data structure comprised of a collection of keys mapped to values.
