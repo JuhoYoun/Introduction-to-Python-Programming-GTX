@@ -509,3 +509,11 @@ I keep referring to this data structure as a dictionary because the original lan
 • “Associative Array” is another synonym. This term echoes the idea of two arrays with associations between them. PHP, JavaScript, and others sometimes use this term.
 • “Hash,” “Hashtable,” and “HashMap” are implementations of Dictionaries or Maps. These terms are somewhat synonymous, although they contain an extra layer of detail; the term “Hash” refers to the way in which the data structure is constructed, not just how it is used. Perl, Lisp, and Ruby use some of these terms.
 So, if you see any of these terms, know that they refer to effectively the same thing: a data structure comprised of a collection of keys mapped to values.
+
+dictionaries in Python aren’t guaranteed to preserve the order of their values the way tuples, lists, and strings do.
+Keys in dictionaries must be immutable: strings, integers, and floats can be keys. Tuples can also be keys, if and only if each individual item in the tuple is itself 
+immutable (such as strings, integers, floats, or other immutable tuples). The reason for this is that if the key changes, the dictionary won’t know what value is 
+associated with it; so it must guarantee the keys cannot change.
+Values, on the other hand, can change. 
+
+
