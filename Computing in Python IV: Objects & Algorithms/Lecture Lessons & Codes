@@ -11,3 +11,36 @@ Note that because the term 'object' is often used to refer both to actual data s
 Instance: A single set of values of a particular class. Classes may be comprised of multiple variables; an instance is a set of values for these variables. The term “instance” is often used interchangeably with the term “object”.
 
 In terms of vocabulary, the term 'object' is often overloaded (including in the title of some of our sections and videos). Sometimes people use it to refer to classes, sometimes people use it to refer to instances. Technically, an 'object' is more synonymous with an 'instance', but the use of the word 'object' in the term 'object-oriented programming' leads people to misuse the term.
+
+
+Declarning a Class
+
+Method
+A function defined inside of a class.
+
+Self
+A keyword in Python classes that is used to refer to the instance itself. It defines the scope of variables and methods that methods in the class can see.
+
+__init__ is called when we first create a new instance of this class.
+
+If we leave off self, the variable has the same scope as a variable nor- mally would in a function: it stops existing when the function is over. So, writing self.firstname says, “Any time we look at this instance’s firstname, it should be the same one!” Every method declared inside a class should have self as the first parameter, and every variable for the class should be preceded by self every time the variable is used inside the class. self is a little like saying ‘my’; it collects together the class’s variables.
+
+Encapsulation
+The ability to combine variables and methods into class definitions in object-oriented programming. It helps avoid modification or misuse of data by other functions or programs.
+
+Constructor
+A common type of method in writing classes that specifies some code to run whenever
+a new instance of the class is created. The constructor often has parameters that provide values to initialize the variables defined by the class.
+
+Destructor
+A common type of method in writing classes that specifies how the instance of a class is to be destroyed, such as releasing its memory back to the computer.
+
+Getter
+A common type of method in writing classes that returns the value of a variable contained within the class. They are commonly used to allow other processing to occur whenever the variable is accessed, like logging.
+
+Setter
+A common type of method in writing classes that sets a variable contained within the class to a new value. They are commonly used
+to allow other processing to occur whenever the variable is changed, like logging.
+
+Why do we need to do these through methods, though? Can’t we just access these variables directly? Many times, it’s best to design our code such that the variables inside it cannot be modified directly.
+-> Use Getter and Setter 
