@@ -9,3 +9,5 @@ Class: A custom data type comprised of multiple variables and/or methods. Instan
 Note that because the term 'object' is often used to refer both to actual data structures and to the general paradigm of object-oriented programming, we'll typically stick to the terms 'class' and 'instance' instead.
 
 Instance: A single set of values of a particular class. Classes may be comprised of multiple variables; an instance is a set of values for these variables. The term “instance” is often used interchangeably with the term “object”.
+
+In terms of vocabulary, the term 'object' is often overloaded (including in the title of some of our sections and videos). Sometimes people use it to refer to classes, sometimes people use it to refer to instances. Technically, an 'object' is more synonymous with an 'instance', but the use of the word 'object' in the term 'object-oriented programming' leads people to misuse the term.
