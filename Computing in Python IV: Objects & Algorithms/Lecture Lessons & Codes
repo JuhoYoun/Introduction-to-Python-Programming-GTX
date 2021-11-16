@@ -44,3 +44,5 @@ to allow other processing to occur whenever the variable is changed, like loggin
 
 Why do we need to do these through methods, though? Can’t we just access these variables directly? Many times, it’s best to design our code such that the variables inside it cannot be modified directly.
 -> Use Getter and Setter 
+
+On line 4, __init__ is Python’s convention for identifying constructors. Whenever a new instance of a class is created, Python goes and searches for the class’s __init__ method and runs it if it exists. If it doesn’t exist, that’s alright; Python just creates the instance without running any initial code.
