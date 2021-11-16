@@ -48,3 +48,5 @@ Why do we need to do these through methods, though? Can’t we just access these
 On line 4, __init__ is Python’s convention for identifying constructors. Whenever a new instance of a class is created, Python goes and searches for the class’s __init__ method and runs it if it exists. If it doesn’t exist, that’s alright; Python just creates the instance without running any initial code.
 
 Destructors do exist in Python, but because Python does so much memory man- agement on its own, you likely won’t need to use them until you get to much more advanced programs.
+
+Interestingly as well, Python does not provide privacy options for its variables and methods. There is no way to bindingly mark a variable or method in a Python class as private, meaning that other code can always access variables directly.
