@@ -63,3 +63,14 @@ The principle that a method call can behave differently depending on the argumen
  Inheritance
 A principle of object-oriented programming where classes can be created that are “subclasses” of other classes, inheriting all the variables and methods from the other class while supplying new variables, methods, or behaviors of these own.
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ Complexity
+The rate at which the number of operations requires to run an algorithm grows based on the value of the input on which it operates.
+
+ Big O Notation
+A notation for expressing the worst-case efficiency of an algorithm in terms of the size of the input.
+
+그냥 책 읽자
+
+
