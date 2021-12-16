@@ -215,6 +215,7 @@
 # (23) Format()
 
 # txt = "For only {price:.2f} dollars!"
+# print(txt)
 # print(txt.format(price = 49))
 #
 # txt1 = "My name is {fname}, I'm {age}".format(fname = "John", age = 36)
