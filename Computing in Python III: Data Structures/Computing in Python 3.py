@@ -11,24 +11,27 @@
 
 # # (3) reassigning immutable data types & id() (memory address)
 # i = 1
-# print(id(i))
+# print(id(i)) 
 # i = 1
-# print(id(i))
+# print(id(i)) #same
 # i = 3
-# print(id(i))
+# print(id(i)) #changed
 # print(hex(id(i)))
 
 # # (4) list alias / reassigning
 # l1 = [1, 2, 3]
 # l2 = l1
 # print(l1, l2)
-# print(id(l1), id(l2))
+# print(id(l1), id(l2)) #same
 # l2.append(4)
 # print(l1, l2)
-# print(id(l1), id(l2))
+# print(id(l1), id(l2)) #same
 # l2 = [1, 2]
 # print(l1, l2)
-# print(id(l1), id(l2))
+# print(id(l1), id(l2)) # different
+# l1 = [0, 0]
+# l2 = [0, 0]
+# print(id(l1), id(l2)) #different
 
 # # (5) invalid string declaration
 # s = ""abcd""
